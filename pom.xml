@@ -61,4 +61,16 @@
             </plugin>
 	</plugins>
 	</build>
+	<distributionManagement>
+           <repository>
+               <id>deploy-release</id>
+               <name>Releases</name>
+               <url>https://nexus-repo-artifact-repo.apps.okd.example.com/repository/pipeline-java-repository/</url>
+           </repository>
+           <snapshotRepository>
+               <id>deploy-snapshot</id>
+               <name>Snapshot</name>
+               <url>https://nexus-repo-artifact-repo.apps.okd.example.com/repository/pipeline-java-repository/</url>
+           </snapshotRepository>
+        </distributionManagement>
 </project>
